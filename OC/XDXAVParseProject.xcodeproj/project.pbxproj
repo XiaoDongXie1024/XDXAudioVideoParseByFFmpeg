@@ -30,6 +30,7 @@
 		23C8B46022A3575600FE8A08 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C8B45F22A3575600FE8A08 /* libz.tbd */; };
 		23C8B46222A3575E00FE8A08 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C8B46122A3575E00FE8A08 /* libiconv.tbd */; };
 		23C8B46422A3576A00FE8A08 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C8B46322A3576A00FE8A08 /* libbz2.tbd */; };
+		480B07C722A610BF00D86976 /* test.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 480B07C622A610BF00D86976 /* test.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +177,8 @@
 		23C8B45F22A3575600FE8A08 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		23C8B46122A3575E00FE8A08 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		23C8B46322A3576A00FE8A08 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		23FDDAF622AFE0B400D8E425 /* log4cplus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log4cplus.h; sourceTree = "<group>"; };
+		480B07C622A610BF00D86976 /* test.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.MOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				23C8B45222A356D400FE8A08 /* Parse */,
+				23FDDAF522AFE09100D8E425 /* 3rd */,
 				23C8B3BF22A356AE00FE8A08 /* fat-x264 */,
 				23C8B3C522A356AF00FE8A08 /* FFmpeg-iOS */,
 				23C8B3A922A355A500FE8A08 /* AppDelegate.h */,
@@ -237,6 +241,7 @@
 				23C8B3B422A355A600FE8A08 /* LaunchScreen.storyboard */,
 				23C8B3B722A355A600FE8A08 /* Info.plist */,
 				23C8B3B822A355A600FE8A08 /* main.m */,
+				480B07C622A610BF00D86976 /* test.MOV */,
 			);
 			path = XDXAVParseProject;
 			sourceTree = "<group>";
@@ -498,6 +503,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		23FDDAF522AFE09100D8E425 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				23FDDAF622AFE0B400D8E425 /* log4cplus.h */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -555,6 +568,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480B07C722A610BF00D86976 /* test.MOV in Resources */,
 				23C8B3B622A355A600FE8A08 /* LaunchScreen.storyboard in Resources */,
 				23C8B3B322A355A600FE8A08 /* Assets.xcassets in Resources */,
 				23C8B3B122A355A500FE8A08 /* Main.storyboard in Resources */,
@@ -648,7 +662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -701,7 +715,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
